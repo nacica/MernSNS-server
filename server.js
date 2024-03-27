@@ -73,5 +73,5 @@ mongoose.connect(process.env.REACT_APP_MONGO_URL).then(() => {
     //   }
     // });
 
-// app.listen(PORT, () => console.log("サーバーが起動しました"));
-app.listen(process.env.PORT, () => console.log("サーバーが起動したよ"));
+app.listen(PORT, () => console.log("サーバーが起動しました"));
+// app.listen(process.env.PORT, () => console.log("サーバーが起動したよ"));
