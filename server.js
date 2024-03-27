@@ -16,8 +16,8 @@ const postRoute = require("./routes/posts");
 const PORT = 5000;
 
 
-mongoose.connect("mongodb+srv://nacica:0232@cluster0.coc9oas.mongodb.net/realsns?retryWrites=true&w=majority").then(() => {
-// mongoose.connect(process.env.REACT_APP_MONGO_URL).then(() => {
+// mongoose.connect("mongodb+srv://nacica:0232@cluster0.coc9oas.mongodb.net/realsns?retryWrites=true&w=majority").then(() => {
+mongoose.connect(process.env.REACT_APP_MONGO_URL).then(() => {
   console.log("MongoDB 繋がったよ");
 });
 
@@ -73,4 +73,5 @@ mongoose.connect("mongodb+srv://nacica:0232@cluster0.coc9oas.mongodb.net/realsns
     //   }
     // });
 
-app.listen(PORT, () => console.log("サーバーが起動しました"));
+// app.listen(PORT, () => console.log("サーバーが起動しました"));
+app.listen(process.env.PORT, () => console.log("サーバーが起動したよ"));
