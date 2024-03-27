@@ -16,7 +16,8 @@ const postRoute = require("./routes/posts");
 const PORT = 5000;
 
 
-mongoose.connect(process.env.REACT_APP_MONGO_URL).then(() => {
+mongoose.connect("mongodb+srv://nacica:0232@cluster0.coc9oas.mongodb.net/realsns?retryWrites=true&w=majority").then(() => {
+// mongoose.connect(process.env.REACT_APP_MONGO_URL).then(() => {
   console.log("MongoDB 繋がったよ");
 });
 
